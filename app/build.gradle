@@ -65,6 +65,7 @@ dependencies {
     compile 'devlight.io:arcprogressstackview:1.0.4'
     compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
     compile 'io.reactivex:rxjava:1.1.1'
+
     compile 'io.reactivex:rxandroid:1.1.0'
     testCompile 'junit:junit:4.12'
 }
