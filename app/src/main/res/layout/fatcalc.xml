@@ -6,12 +6,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_below="@+id/slimChart"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:tint="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/circle"
+            android:id="@+id/imageView3" />
+
+        <TextView
+            android:text="height:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/textView4"
+            android:textColor="@color/secondary_text"
+            android:alpha=".5"
+            android:layout_marginLeft="6dp" />
+
+        <TextView
+            android:text="18"
+            android:id="@+id/display_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="15sp"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:tint="@color/primaryl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/circle"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:text="weight:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="15sp"
+            android:textColor="@color/secondary_text"
+            android:alpha=".5"
+            android:layout_marginLeft="6dp" />
+
+        <TextView
+            android:text="91"
+            android:id="@+id/display_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textStyle="normal|bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/accentl"
+            app:srcCompat="@drawable/circle"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/slimChart"
+            android:layout_toEndOf="@+id/slimChart"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:text="BMR:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="15sp"
+            android:textColor="@color/secondary_text"
+            android:alpha=".5"
+            android:layout_marginLeft="6dp" />
+
+        <TextView
+            android:text="621"
+            android:id="@+id/display_bmr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
 
     <FrameLayout
-        android:padding="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
         android:layout_width="wrap_content"
-
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:layout_height="wrap_content">
 
         <microhealthllc.com.usarmyfatcalc.chart.ColorArcProgressBar
