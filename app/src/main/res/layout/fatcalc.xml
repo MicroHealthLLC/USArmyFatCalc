@@ -104,12 +104,17 @@
             android:layout_marginRight="10dp" />
 
     </LinearLayout>
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:layout_height="wrap_content">
     <FrameLayout
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingTop="10dp"
+        android:id="@+id/frame"
         android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_gravity="center_vertical|center_horizontal"
         android:layout_height="wrap_content">
 
@@ -141,6 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+
             android:layout_gravity="center"
             android:orientation="vertical">
 
@@ -159,6 +165,23 @@
         </LinearLayout>
 
 
+
     </FrameLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:layout_below="@+id/frame"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="20dp"
+            android:text="Log History"/>
+    </LinearLayout>
+</RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>
