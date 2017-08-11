@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_content"
+        app:title="About"
+
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/card_margin"
+                    android:layout_marginRight="@dimen/card_margin">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:src="@drawable/logo"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:text="@string/terms"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:textSize="10sp"
+                            android:text="credits : Max Moons- Microhealth Intern"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:textSize="10sp"
+                            android:text="credits : Daniel Boakye- Microhealth Intern"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/card_margin"
+                    android:layout_marginLeft="@dimen/card_margin"
+                    android:layout_marginRight="@dimen/card_margin">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_info_black_24dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginStart="15dp"
+                                android:padding="5dp"
+                                android:text="Version : 1.0.0" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_action_action_description" />
+
+                            <Button
+                                android:id="@+id/privacyp"
+                                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="40dp"
+                                android:paddingLeft="15dp"
+                                android:text="Privacy Policy"
+
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@color/secondary_text" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_action_action_description" />
+
+                            <Button
+                                android:id="@+id/termsofuse"
+                                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="40dp"
+                                android:paddingLeft="15dp"
+                                android:text="Terms of Use"
+
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@color/secondary_text" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/card_margin"
+                    android:layout_marginRight="@dimen/card_margin">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/about_icon_twitter"
+                                android:layout_marginStart="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/primary_text"
+                                    android:layout_height="wrap_content"
+                                    android:text="Follow us on twitter"
+                                    android:layout_marginLeft="15dp" />
+
+                                <Button
+                                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                                    android:id="@+id/followus"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="40dp"
+                                    android:textAllCaps="false"
+                                    android:paddingLeft="15dp"
+
+                                    android:textAlignment="center"
+                                    android:text=":@microhealthtalk"
+                                    android:textColor="@color/secondary_text" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="25dp"
+
+                                android:layout_marginStart="5dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/web64"
+                                android:layout_marginLeft="5dp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary_text"
+                                    android:text="Visit our website"
+                                    android:layout_marginLeft="15dp" />
+                                <Button
+                                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                                    android:id="@+id/webaddress"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="40dp"
+                                    android:textAllCaps="false"
+                                    android:paddingLeft="15dp"
+
+                                    android:textAlignment="center"
+                                    android:text="www.microhealthllc.com"
+                                    android:textColor="@color/secondary_text" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_height="wrap_content">
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/floating_action_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="@color/mycustomprimary_dark"
+            fab:menu_colorPressed="@color/mycustomprimary"
+            fab:menu_colorRipple="#99d4d4d4"
+
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_labels_colorNormal="#333"
+            fab:menu_labels_colorPressed="#444"
+            fab:menu_labels_colorRipple="#66efecec"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="#f2f1f1"
+            fab:menu_labels_textSize="15sp"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="@color/divider"
+            fab:menu_shadowRadius="4dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="4dp"
+            fab:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MenuButtonsStyle"
+                android:src="@drawable/ic_action_info_white"
+                fab:menu_colorNormal="@color/mycustomprimary_dark"
+                fab:menu_colorPressed="@color/mycustomprimary"
+                fab:fab_label="info"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/loghistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:menu_colorNormal="@color/mycustomprimary_dark"
+                fab:menu_colorPressed="@color/mycustomprimary"
+                android:src="@drawable/ic_action_access_time"
+                style="@style/MenuButtonsStyle"
+                fab:fab_label="log history"
+                fab:fab_size="mini" />
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                fab:menu_colorNormal="@color/mycustomprimary_dark"
+                fab:menu_colorPressed="@color/mycustomprimary"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_edit"
+                style="@style/MenuButtonsStyle"
+                fab:fab_label="input"
+                fab:fab_size="mini" />
+        </com.github.clans.fab.FloatingActionMenu>
+    </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
