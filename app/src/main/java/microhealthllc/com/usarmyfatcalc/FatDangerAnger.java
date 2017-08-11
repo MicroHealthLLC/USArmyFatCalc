@@ -70,7 +70,6 @@ public class FatDangerAnger extends AppCompatActivity {
         about = (FloatingActionButton)findViewById(R.id.about);
         info = (FloatingActionButton)findViewById(R.id.info);
 
-        history = (FloatingActionButton) findViewById(R.id.loghistory);
         mAdapter = new LogListAdapter(logList);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);

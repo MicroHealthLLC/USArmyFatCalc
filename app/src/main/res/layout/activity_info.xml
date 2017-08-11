@@ -140,8 +140,9 @@
             fab:menu_animationDelayPerItem="55"
             fab:menu_backgroundColor="@android:color/transparent"
             fab:menu_buttonSpacing="0dp"
-            fab:menu_colorNormal="#da3c2f"
-            fab:menu_colorPressed="#dc4b3f"
+            fab:menu_colorNormal="@color/mycustomprimary_dark"
+            fab:menu_colorPressed="@color/mycustomprimary"
+
             fab:menu_colorRipple="#99d4d4d4"
 
             fab:menu_fab_size="normal"
@@ -173,6 +174,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_action_access_time"
+                style="@style/MenuButtonsStyle"
                 fab:fab_label="log history"
                 fab:fab_size="mini" />
 
@@ -181,6 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_action_people"
+                style="@style/MenuButtonsStyle"
                 fab:fab_label="about"
                 fab:fab_size="mini" />
 
@@ -189,6 +192,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_action_edit"
+                style="@style/MenuButtonsStyle"
                 fab:fab_label="input"
                 fab:fab_size="mini" />
         </com.github.clans.fab.FloatingActionMenu>

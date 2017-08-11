@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.github.clans.fab.FloatingActionButton;
@@ -35,7 +36,7 @@ public class FatCalActivity extends AppCompatActivity {
     private LogListAdapter mAdapter;
     private List<LogModel> logList = new ArrayList<>();
     DBHandler db;
-
+Button viewall;
     FloatingActionButton home;
     FloatingActionButton about;
     FloatingActionButton info;
@@ -54,6 +55,7 @@ public class FatCalActivity extends AppCompatActivity {
      //   hip = (TextView) findViewById(R.id.display_hip);
         bf = (TextView) findViewById(R.id.bf_note);
         neck = (TextView) findViewById(R.id.display_neck);
+        viewall = (Button)findViewById(R.id.view_more);
         bodyfat =  extras.getDouble("bodyfat");
         double[] values= extras.getDoubleArray("values");
         boolean isfemale = extras.getBoolean("isfemale");
@@ -113,6 +115,14 @@ public class FatCalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent info = new Intent(FatCalActivity.this, Info.class);
                 startActivity(info);
+            }
+        });
+
+        viewall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(FatCalActivity.this, Info.class);
+                startActivity(i);
             }
         });
         prepareMovieData();

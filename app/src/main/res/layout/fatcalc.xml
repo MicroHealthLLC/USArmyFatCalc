@@ -196,8 +196,8 @@
 
             android:layout_below="@id/frame"
             android:orientation="vertical"
-            android:paddingStart="25dp"
-            android:paddingEnd="25dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:layout_centerHorizontal="true"
             android:layout_height="wrap_content">
             <android.support.v7.widget.CardView
@@ -228,7 +228,7 @@
                     android:padding="0dp"
                     android:textAlignment="center"
                     android:text="View All"
-                    android:textSize="9sp"
+                    android:textSize="8sp"
                     android:textColor="@color/mycustomaccent" />
             </android.support.v7.widget.CardView>
 
